@@ -1,5 +1,7 @@
 # Challenge Amigo Secreto (Oracle + Alura) !!!
 
+<img src="https://github.com/h1toh/alura-oracle-challenge-amigo-secreto/blob/main/assets/images/screenshot.png">
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5**
