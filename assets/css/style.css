@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+}
+
+
+
+header {
+    background-color: #45658e;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    height: 400px;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    height: 200px;
+}
+footer a{
+    color: black;
+
+}
+
+object {
+    height: 506px;
+    width: 30%;
+    top: 100px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-weight: 10px;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.lu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.x {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: -200px;
+}
+
+.esco {
+    color: white;
+}
+
+.escolhido {
+    color: rgb(143, 233, 9);
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.escolhid {
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#caixaDeTexto {
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
+    outline: none;
+    padding: 0 10px;
+    border: 1px solid #45658e;
+    height: 55px;
+    width: 450px;
+    font-size: 16px;
+}
+
+#btnAdicionar {
+    border-bottom-right-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: #45658e;
+    color: white;
+    border: 1px solid #45658e;
+    padding: 2px;
+    margin-left: -5px;
+    height: 57px;
+    font-size: 16px;
+    padding: 0 10px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+#btnAdicionar:hover,
+#btnSortear:hover {
+    background-color: #345785;
+}
+
+#btnSortear {
+    background-color: #45658e;
+    color: white;
+    border: 1px solid #45658e;
+    padding: 2px;
+    margin-left: -5px;
+    height: 37px;
+    font-size: 16px;
+    padding: 0 10px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    width: 300px;
+    border-radius: 15px;
+}
+
+#btnApagar {
+    background-color: white;
+    color: #45658e;
+    border: 1px solid #45658e;
+    padding: 2px;
+    margin-left: -5px;
+    height: 37px;
+    font-size: 16px;
+    padding: 0 10px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    width: 300px;
+    border-radius: 15px;
+}
+#btnApagar:hover{
+    background-color: rgb(240, 237, 237);
+}
+
+li {
+    list-style-type: none;
+    padding: 6px 20px;
+}
+
+ul {
+    background-color: #ced7e2;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-top: -350px;
+    width: 600px;
+    overflow: auto;
+    height: 300px;
+}
+
+.sorte {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

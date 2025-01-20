@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE - Amigo Secreto</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/image.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <object data="./assets/images/image.svg" type="image/svg+xml"></object>
+            <div>
+                <h1 class="titulo">Amigo Secreto</h1>
+                <div class="escolhid">
+                    <h3 class="esco">Escolhido: </h3>
+                    <h3 class="escolhido"></h3>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="x">
+            <input maxlength="70" autocomplete="off" type="text" name="caixaDeTexto" id="caixaDeTexto"
+                placeholder="Digite os nomes separados por virgula (,)">
+            <input type="button" value="Adicionar" id="btnAdicionar">
+        </div>
+    </main>
+    <div class="lu">
+        <ul id="lista"></ul>
+    </div>
+    <div class="sorte">
+        <input type="button" hidden value="Sortear" id="btnSortear">
+        <input type="button" hidden value="Apagar tudo" id="btnApagar">
+    </div>
+    <footer>
+        <a href="https://github.com/h1toh">
+            <p>Desenvolvido por Lucas Gomes</p>
+        </a>
+        <p>© 2025 Alura + ONE G8</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
