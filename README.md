@@ -53,4 +53,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 👨‍💻 Desenvolvido por [Lucas Gomes](https://github.com/h1toh).
 
-(./assets/images/image.svg)
+<img src="./assets/images/image.svg"/>
