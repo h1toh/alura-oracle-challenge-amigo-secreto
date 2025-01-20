@@ -1,6 +1,4 @@
-# Challenge Amigo Secreto (Oracle + Alura) 🎁
-
-![Prévia do Projeto](./assets/images/image.svg)
+# Challenge Amigo Secreto (Oracle + Alura) !!!
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -8,9 +6,9 @@
 - **CSS3**
 - **JavaScript**
 
-## 🎯 Como Usar
+## 🎯 Passo a passo de como usar
 
-1. Clone o repositório:
+1. Faça um clone do repositório:
    ```bash
    git clone https://github.com/h1toh/alura-oracle-challenge-amigo-secreto.git
    ```
@@ -52,3 +50,5 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 👨‍💻 Desenvolvido por [Lucas Gomes](https://github.com/h1toh).
+
+(./assets/images/image.svg)
