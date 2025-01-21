@@ -6,90 +6,71 @@
     font-weight: 100px;
     font-style: normal;
 }
-
+header, #btnAdicionar, #btnSortear {
+    background-color: #45658e
+}
+main, footer, .cabecalho, .lu, .x, .escolhid, .sorte{
+    display: flex;
+}
+main, footer, .cabecalho, .lu, .sorte{
+    justify-content: center;
+}
+main, footer, .cabecalho, .lu, .escolhid, .sorte{
+    align-items: center;
+}
 header {
-    background-color: #45658e;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 150px;
     height: 400px;
     overflow: hidden;
     transition: 0.6s ease-in-out;
 }
-
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 400px;
     flex-direction: column;
     gap: 10px;
 }
-
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     font-size: 12px;
     height: 200px;
 }
 footer a{
     color: black;
-    
 }
-
 object {
     height: 506px;
     width: 30%;
     top: 100px;
 }
-
-.cabecalho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .titulo {
     color: white;
     font-weight: 10px;
     font-size: 60px;
     text-decoration: underline;
 }
-
 .lu {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 100px;
 }
-
 .x {
-    display: flex;
     padding: 0;
     margin: 0;
     margin-top: -200px;
     transition: 0.6s ease-in-out;
 }
-
 .esco {
     color: white;
 }
-
 .escolhido {
     color: rgb(143, 233, 9);
     font-size: 20px;
     text-decoration: underline;
 }
-
 .escolhid {
     justify-content: left;
-    display: flex;
-    align-items: center;
     gap: 10px;
 }
-
 #caixaDeTexto {
     border-bottom-left-radius: 9px;
     border-top-left-radius: 9px;
@@ -100,11 +81,10 @@ object {
     width: 450px;
     font-size: 16px;
 }
-
 #btnAdicionar {
     border-bottom-right-radius: 9px;
     border-top-right-radius: 9px;
-    background-color: #45658e;
+    
     color: white;
     border: 1px solid #45658e;
     padding: 2px;
@@ -115,14 +95,11 @@ object {
     transition: 0.1s ease-in-out;
     cursor: pointer;
 }
-
 #btnAdicionar:hover,
 #btnSortear:hover {
     background-color: #345785;
 }
-
 #btnSortear {
-    background-color: #45658e;
     color: white;
     border: 1px solid #45658e;
     padding: 2px;
@@ -135,7 +112,6 @@ object {
     width: 300px;
     border-radius: 15px;
 }
-
 #btnApagar {
     background-color: white;
     color: #45658e;
@@ -153,12 +129,10 @@ object {
 #btnApagar:hover{
     background-color: rgb(240, 237, 237);
 }
-
 li {
     list-style-type: none;
     padding: 6px 20px;
 }
-
 ul {
     background-color: #ced7e2;
     border-radius: 20px;
@@ -169,35 +143,23 @@ ul {
     height: 300px;
     transition: 0.6s ease-in-out;
 }
-
 .sorte {
     gap: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: 0.6s ease-in-out;
 }
-
-
 @media (max-width: 768px) {
     header {
-        background-color: #45658e;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         height: 200px;
         overflow: hidden;
     }
     ul {
-        background-color: #ced7e2;
-        border-radius: 20px;
-        padding: 0 10px;
-        margin-top: -350px;
         width: 400px;
         overflow: auto;
         height: 300px;
     }
     .x {
-        display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
@@ -208,9 +170,6 @@ ul {
     }
     .sorte {
         gap: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
     }
     .titulo {
@@ -223,4 +182,4 @@ ul {
         margin-top: -100px;
         width: 30%;
     }
-  }
+}
