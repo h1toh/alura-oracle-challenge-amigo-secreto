@@ -5,21 +5,33 @@ const btnApagar = document.getElementById("btnApagar")
 const ul = document.getElementById("lista")
 const main = document.querySelector("main")
 const nomeEscolhido = document.querySelector(".escolhido")
-
-let aviso = main.appendChild(document.createElement("p"))
+const aviso = main.appendChild(document.createElement("p"))
 aviso.style.color = "red"
 
 let listaDeNomes = []
 
-function adicionar() {
-    if (!caixaDeTexto.value) { // Caso a caixa de texto esteja vazia, nao tera nomes na lista
-        aviso.textContent = "Nenhum nome adicionado."
-        return 0
+function mostrarAvisoCasoTextoVazio(nome) {
+    if (!nome) {
+        aviso.textContent = "Digite um ou mais nomes."
     }
+}
 
+function removerAviso() {
+    aviso.textContent = ""
+}
+
+function ativarBotoesSortearApagar() {
+    if (listaDeNomes.length >= 2) {
+        btnSortear.removeAttribute("hidden") // Aparece btn sortear
+        btnApagar.removeAttribute("hidden") // Aparece btn apagar
+    }
+}
+
+function adicionarNomeNaLista() {
+    mostrarAvisoCasoTextoVazio(caixaDeTexto.value)
     if (caixaDeTexto.value) {
         aviso.textContent = ""
-        let nomes = caixaDeTexto.value.split(", ") // Recebe os nomes e cria um array com eles
+        let nomes = caixaDeTexto.value.split(",") // Recebe os nomes e cria um array com eles
 
         for (let i = 0; i < nomes.length; i++) {
             if (listaDeNomes.length >= 1) {
@@ -31,36 +43,41 @@ function adicionar() {
         }
         caixaDeTexto.value = "" // Limpa a caixa de texto
     }
-    if (listaDeNomes.length >= 2) {
-        btnSortear.removeAttribute("hidden") // Aparece btn sortear
-        btnApagar.removeAttribute("hidden") // Aparece btn apagar
-    }
+    ativarBotoesSortearApagar()
+}
+
+function sortearNome() {
+    let i = Math.floor(Math.random() * listaDeNomes.length) // Indice aleatorio
+    nomeEscolhido.innerHTML = listaDeNomes[i] // Aqui mostra o nome escolhido na tela
+    removerAviso()
+}
+
+function apagarTudo() {
+    removerAviso()
+    nomeEscolhido.innerHTML = ""
+    btnSortear.setAttribute("hidden", null)
+    btnApagar.setAttribute("hidden", null)
+    ul.textContent = ""
+    listaDeNomes = []
 }
 
 btnAdicionar.addEventListener("click", () => {
-    adicionar() // Clicando no botao
+    adicionarNomeNaLista() // Clicando no botao adicionar
 })
 
 caixaDeTexto.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-        adicionar() // Pressionando Enter
+        adicionarNomeNaLista() // Pressionando a tecla Enter
     }
 })
 
 btnSortear.addEventListener("click", () => {
     if (!listaDeNomes.length) {
-        return 0
+        return
     }
-
-    let i = Math.floor(Math.random() * listaDeNomes.length) // Indice aleatorio
-    nomeEscolhido.innerHTML = listaDeNomes[i] // Aqui mostra o nome escolhido na tela
+    sortearNome()
 })
 
 btnApagar.addEventListener("click", () => { // Limpa tudo
-    nomeEscolhido.innerHTML = ""
-    btnSortear.setAttribute("hidden", null)
-    btnApagar.setAttribute("hidden", null)
-    ul.textContent = ""
-    aviso.textContent = ""
-    listaDeNomes = []
+    apagarTudo()
 })
